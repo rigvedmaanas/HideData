@@ -99,11 +99,11 @@ def decode_ui():
         widget.destroy()
     try:
         data = lsb.reveal(FILE)
+        text = CTkLabel(frame, text=data, font=("HaxrCorp4089", 70), wraplength=700, fg_color="transparent", bg_color="transparent")
+        text.place(anchor="center", relx=0.5, rely=0.5)
+
         go_back = CTkButton(frame, text="< Go Back", font=("HaxrCorp4089", 70), command=home)
         go_back.place(anchor="nw", x=20, y=20)
-
-        text = CTkLabel(frame, text=data, font=("HaxrCorp4089", 70), wraplength=700)
-        text.place(anchor="center", relx=0.5, rely=0.5)
     except Exception as e:
         showerror("Error", e)
         go_back = CTkButton(frame, text="< Go Back", font=("HaxrCorp4089", 70), command=home)
