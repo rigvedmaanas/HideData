@@ -8,3 +8,10 @@ https://github.com/rigvedmaanas/HideData/assets/77579661/6eb24785-7555-468d-9959
 
 # How to install this
 
+Run
+```pip3 install -r requirements.txt```
+
+Then
+```python3 main.py```
+
+And that's it 👍
